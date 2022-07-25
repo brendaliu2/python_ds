@@ -14,7 +14,8 @@ def weekday_name(day_of_week):
     """
 
     weekday = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
-    if day_of_week in range(1,8):
+    #if day_of_week in range(1,8):
+    if 0 <day_of_week<8:
         return weekday[day_of_week - 1]
     else:
         return None
