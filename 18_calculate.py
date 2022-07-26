@@ -1,3 +1,6 @@
+#from os import O_TEMPORARY
+
+
 def calculate(operation, a, b, make_int=False, message='The result is'):
     """Perform operation on a + b, ()possibly truncating) & returning w/msg.
 
@@ -28,3 +31,30 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
           ...
         ValueError: Invalid Operation
     """
+
+    if operation == 'add' and make_int:
+        result = round(a) + round(b)
+        return f'{message} {result}'
+    elif operation == 'add':
+        result = a + b
+        return f'{message} {result}'
+    elif operation == 'subtract' and make_int:
+        result = round(a) - round(b)
+        return f'{message} {result}'
+    elif operation == 'subtract':
+        result = a - b
+        return f'{message} {result}'
+    elif operation == 'multiply' and make_int:
+        result = round(a) * round(b)
+        return f'{message} {result}'
+    elif operation == 'multiply':
+        result = a * b
+        return f'{message} {result}'
+    elif operation == 'divide' and make_int:
+        result == a//b
+        return f'{message} {result}'
+    elif operation == 'divide':
+        result = a/b
+        return f'{message} {result}'
+    else:
+        raise ValueError('Invalid Operation')
