@@ -12,7 +12,20 @@ def mode(nums):
         2
     """
     max = 0
+    # for num in nums:
+    #     if nums.count(num) > max:
+    #         max = num
+    # return max
+
+    #0(n^2) try o(n)
+
+    freq_count = {}
     for num in nums:
-        if nums.count(num) > max:
+        freq_count[num] = nums.count(num)
+
+    for num in freq_count:
+        if freq_count[num] > max:
             max = num
+
     return max
+
