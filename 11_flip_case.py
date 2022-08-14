@@ -21,3 +21,5 @@ def flip_case(phrase, to_swap):
         else:
             new_word += char
     return new_word
+
+#swap case method

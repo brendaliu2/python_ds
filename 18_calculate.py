@@ -1,6 +1,3 @@
-#from os import O_TEMPORARY
-
-
 def calculate(operation, a, b, make_int=False, message='The result is'):
     """Perform operation on a + b, ()possibly truncating) & returning w/msg.
 
@@ -58,3 +55,5 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
         return f'{message} {result}'
     else:
         raise ValueError('Invalid Operation')
+
+#look at solution / simplify

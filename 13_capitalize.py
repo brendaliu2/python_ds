@@ -14,3 +14,4 @@ def capitalize(phrase):
         else:
             new_word += char
     return new_word
+#capitalize method

@@ -22,9 +22,11 @@ def partition(lst, fn):
 
     pass_tests = []
     fail_tests = []
+    
     for item in lst:
-        if fn(item) == True:
+        if fn(item):
             pass_tests.append(item)
         else:
             fail_tests.append(item)
+
     return [pass_tests,fail_tests]

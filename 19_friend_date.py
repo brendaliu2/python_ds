@@ -21,9 +21,11 @@ def friend_date(a, b):
 
     intersection = friend_1hobbies & friend_2hobbies
 
-    if len(intersection):
-        return True
-    else:
-        return False
+    # if len(intersection): 
+    #     return True
+    # else:
+    #     return False
+
+    return bool(intersection) #empty set is falsy
 
 
